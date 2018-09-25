@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Form</title>
+</head>
+<body>
+    <form method="get">
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <br>
+        Age:
+        <br>
+        <input type="radio" name="age" value="<18">&lt;18
+        <br>
+        <input type="radio" name="age" value="19-35">19-35
+        <br>
+        <input type="radio" name="age" value="36-48">36-48
+        <br>
+        <input type="radio" name="age" value=">49">&gt;49
+        <br>
+        <label>Profession:
+            <input type="text" name="profession">
+        </label>
+        <br>
+        <label>Country:
+            <select name="country">
+                <option value="portugal" selected>Portugal</option>
+                <option value="brasil">Brasil</option>
+                <option value="england">England</option>
+                <option value="china">China</option>
+            </select>
+        </label>
+        <br>
+        Interests:
+        <br>
+        <input type="checkbox" name="interests" value="playing chess">Playing Chess
+        <br>
+        <input type="checkbox" name="interests" value="fishing">Fishing
+        <br>
+        <input type="checkbox" name="interests" value="dancing">Dancing
+        <br>
+        <label>How did you hear about us?
+            <br>
+            <textarea name="info" rows="4" cols="50"></textarea>
+        </label>
+        <br>
+        <input type="submit" value="Ok!">
+    </form>
+</body>
+</html>
