@@ -1,0 +1,51 @@
+:root {
+    --main-color-dark: #2A2F33;
+    --main-color-primary: #046DD5;
+    --main-color-secondary: #F4655F;
+
+    --section-color-local: #E1493E;
+    --section-color-world: #8ABA56;
+    --section-color-politics: #5B4282;
+    --section-color-sports: #FF8932;
+    --section-color-science: #19B6E9;
+    --section-color-weather: #E84C8B;
+
+    --title-font: Montserrat;
+    --content-font: Georgia;
+
+
+    --default-spacing: 1em;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+body > header {
+    grid-column-end: span 2;
+}
+
+body > aside {
+    grid-row-end: span 3;
+}
+
+body > header {
+    display: flex;
+    flex-direction: column;
+}
+
+body > header #signup {
+    align-self: flex-end;
+}
+
+body > nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+body > nav ul li {
+    flex-grow: 1;
+}
+

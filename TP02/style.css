@@ -1,0 +1,189 @@
+:root {
+    --main-color-dark: #2A2F33;
+    --main-color-primary: #046DD5;
+    --main-color-secondary: #F4655F;
+
+    --section-color-local: #E1493E;
+    --section-color-world: #8ABA56;
+    --section-color-politics: #5B4282;
+    --section-color-sports: #FF8932;
+    --section-color-science: #19B6E9;
+    --section-color-weather: #E84C8B;
+
+    --title-font: Montserrat;
+    --content-font: Georgia;
+
+
+    --default-spacing: 1em;
+
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #EDEFF0;
+    width: 60em;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+body > header {
+    margin-top: 1em;
+    background: var(--main-color-primary);
+    color: white;
+    padding: 1em;
+    padding-top: 1.4em;
+    font-size: 1em;
+}
+
+body > header h1 {
+    font-weight: bolder;
+    margin: 0;
+    font-size: 1.7em;
+    margin-bottom: 0.1em;
+}
+
+body > header h2 {
+    font-weight: bolder;
+    margin: 0;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+#signup a {
+    font-size: 0.9em;
+}
+
+#signup a:first-of-type:after  {
+    content: " |";
+}
+
+nav {
+    background: white;
+}
+
+nav input {
+    display: none;
+}
+
+nav #hamburger {
+    display: none;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    border-top-style: solid;
+    border-top-width: 0.3em;
+    padding: 1em;
+}
+
+nav ul li:nth-child(1) {
+    border-top-color: var(--section-color-local);
+}
+
+nav ul li:nth-child(2) {
+    border-top-color: var(--section-color-world);
+}
+
+nav ul li:nth-child(3) {
+    border-top-color: var(--section-color-politics);
+}
+
+nav ul li:nth-child(4) {
+    border-top-color: var(--section-color-sports);
+}
+
+nav ul li:nth-child(5) {
+    border-top-color: var(--section-color-science);
+}
+
+nav ul li:nth-child(6) {
+    border-top-color: var(--section-color-weather);
+}
+
+#related {
+    background: var(--main-color-dark);
+    color: white;
+    padding: 1em;
+}
+
+#news , body > footer {
+    margin-right: 1em;
+}
+
+#news article {
+    background: white;
+    margin-top: 1em;
+}
+
+#news article img {
+    width: 100%;
+}
+
+#news article header h1 {
+    position: absolute;
+}
+
+#news article p {
+    padding: 0.6em 1em;
+    margin: 0;
+}
+
+#news article p:first-of-type::first-letter {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#news article footer {
+    background: var(--main-color-secondary);
+    padding: 0.6em;
+    color: white;
+    font-size: 0.9em;
+}
+
+#news article h1 {
+    color: white;
+    padding: 0.4em 0.8em;
+    width: 15em;
+    font-size: 1.4em;
+    text-shadow: 5px 5px 5px black;
+}
+
+#news article footer .tags a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#news article footer .author::before {
+    content: "By ";
+}
+
+#news article footer .date {
+    margin: 0 0.7em;
+    font-weight: bold;
+}
+
+#news article footer .comments {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#news article footer .comments::after {
+    content: " comments";
+}
+
+body > footer {
+    margin-top: 1em;
+    background: var(--main-color-dark);
+    color: #aaa;
+    padding: 0.2em 1em;
+}
