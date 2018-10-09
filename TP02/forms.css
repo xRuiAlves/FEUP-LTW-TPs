@@ -1,0 +1,48 @@
+:root {
+    --main-color-dark: #2A2F33;
+    --main-color-primary: #046DD5;
+    --main-color-secondary: #F4655F;
+
+    --section-color-local: #E1493E;
+    --section-color-world: #8ABA56;
+    --section-color-politics: #5B4282;
+    --section-color-sports: #FF8932;
+    --section-color-science: #19B6E9;
+    --section-color-weather: #E84C8B;
+
+    --title-font: Montserrat;
+    --content-font: Georgia;
+
+
+    --default-spacing: 1em;
+}
+
+#register h1, #login h1{
+    text-align: center;
+}
+
+#register form, #login form {
+    padding: 3em;
+    padding-bottom: 0em;
+    width: 30%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#register form input, #login form input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+#register form input[type="submit"], #login form input[type="submit"] {
+    padding: 0.8em 2em;
+    width: auto;
+    align-self: flex-end;
+}

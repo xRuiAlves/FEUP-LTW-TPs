@@ -20,6 +20,7 @@
 body {
     display: grid;
     grid-template-columns: 80% 20%;
+    grid-template-rows: auto max-content auto max-content;
 }
 
 body > header {

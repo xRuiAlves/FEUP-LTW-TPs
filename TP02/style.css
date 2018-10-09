@@ -69,7 +69,7 @@ nav input {
     display: none;
 }
 
-nav #hamburger {
+nav .hamburger {
     display: none;
 }
 
@@ -87,27 +87,27 @@ nav ul li {
 }
 
 nav ul li:nth-child(1) {
-    border-top-color: var(--section-color-local);
+    border-color: var(--section-color-local);
 }
 
 nav ul li:nth-child(2) {
-    border-top-color: var(--section-color-world);
+    border-color: var(--section-color-world);
 }
 
 nav ul li:nth-child(3) {
-    border-top-color: var(--section-color-politics);
+    border-color: var(--section-color-politics);
 }
 
 nav ul li:nth-child(4) {
-    border-top-color: var(--section-color-sports);
+    border-color: var(--section-color-sports);
 }
 
 nav ul li:nth-child(5) {
-    border-top-color: var(--section-color-science);
+    border-color: var(--section-color-science);
 }
 
 nav ul li:nth-child(6) {
-    border-top-color: var(--section-color-weather);
+    border-color: var(--section-color-weather);
 }
 
 #related {
@@ -131,9 +131,14 @@ nav ul li:nth-child(6) {
 
 #news article header h1 {
     position: absolute;
+    color: white;
+    padding: 0.4em 0.8em;
+    width: 15em;
+    font-size: 1.4em;
+    text-shadow: 5px 5px 5px black;
 }
 
-#news article p {
+#news article p, #news article h1 {
     padding: 0.6em 1em;
     margin: 0;
 }
@@ -148,14 +153,6 @@ nav ul li:nth-child(6) {
     padding: 0.6em;
     color: white;
     font-size: 0.9em;
-}
-
-#news article h1 {
-    color: white;
-    padding: 0.4em 0.8em;
-    width: 15em;
-    font-size: 1.4em;
-    text-shadow: 5px 5px 5px black;
 }
 
 #news article footer .tags a {

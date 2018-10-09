@@ -1,0 +1,96 @@
+:root {
+    --main-color-dark: #2A2F33;
+    --main-color-primary: #046DD5;
+    --main-color-secondary: #F4655F;
+
+    --section-color-local: #E1493E;
+    --section-color-world: #8ABA56;
+    --section-color-politics: #5B4282;
+    --section-color-sports: #FF8932;
+    --section-color-science: #19B6E9;
+    --section-color-weather: #E84C8B;
+
+    --title-font: Montserrat;
+    --content-font: Georgia;
+
+
+    --default-spacing: 1em;
+}
+
+@media (max-width: 60em) {
+    body {
+        display: block;
+        width: auto;
+    }
+
+    body > aside {
+        display: none;
+    }
+}
+
+@media (max-width: 30em) {
+    body {
+        background: white;
+    }
+
+    body > header h2 {
+        display: none;
+    }
+
+    body > header #signup {
+        align-self: flex-start;
+    }
+
+    #news article header h1 {
+        position: static;
+        color: black;
+        padding-top: 1em;
+        padding-left: 0.8em;
+        width: auto;
+        font-size: 1.4em;
+        text-shadow: none;
+    }
+
+    #menu ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: initial;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition-property: height, opacity, background-color;
+        transition-duration: 0.5s;
+    }
+
+    #menu ul li {
+        display: block;
+        border-left-style: solid;
+        border-left-width: 0.3em;
+        border-top-width: 0;
+        padding: 1em;
+    }
+
+
+    #menu .hamburger::before {
+        content: "\2630";
+        width: 100%;
+    }
+
+    #menu .hamburger {
+        display: block;
+        color: white;
+        background: var(--main-color-dark);
+        cursor: pointer;
+        padding: 1em;
+    }
+
+    #menu input:checked + label::before {
+        content: "\2715";
+    }
+
+    #menu input:checked ~ ul {
+        height: 250px;
+        opacity: 1;
+        background-color: #d5d5d5;
+    }
+}
